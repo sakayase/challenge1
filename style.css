@@ -1,0 +1,212 @@
+
+body {
+	background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
+	background-position: right bottom, left top;
+	background-repeat: no-repeat, no-repeat;
+	font-size: 15px;
+	font-family: "Spartan";
+	padding: 120px;
+	display:flex;
+	flex-wrap: wrap column;
+}
+
+
+#container {
+	display: flex;
+	width: 1440px;	
+	flex-wrap: wrap;
+}
+
+
+/* ------------------------------------- titre et sous titre ------------------------------*/
+#flex1 {
+	width: 620px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#titre {
+	color: hsl(300, 43%, 22%);
+	font-weight: 700;
+	font-size: 25px;
+	width: 550px;
+	line-height: 50px;
+}
+
+#sous-titre {
+	color: hsl(303, 10%, 53%);
+	font-size: medium;
+	font-weight: 400;
+	width: 500px;
+	line-height: 25px;
+}
+
+/* ------------------------------------ notes ---------------------------------------*/
+#flex2 {
+	display:flex;
+	flex-wrap: wrap;
+	width:800px;
+	height: 250px;
+	margin-top: 25px;
+	margin-right: 0px;
+}
+
+.rated {
+
+	/*disposition*/
+	display: flex;
+	align-items: center;
+	width: 500px;
+	background-color: hsl(300, 24%, 96%);
+	margin-top: 25px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+
+	/*style*/
+	font-weight: 600;
+	color: hsl(300, 43%, 22%);
+}
+
+#rated1 {
+	margin-bottom: 8px;
+	margin-left: 200px;
+}
+
+#rated2 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 250px;
+}
+
+#rated3 {
+	margin-top: 8px;
+	margin-left: 300px;
+}
+/*juste une etoile*/
+.star {
+	margin: 3px;
+}
+
+/*toutes les etoiles d'une boite*/
+.stars {
+	margin-left: 35px;
+}
+
+.txt-review {
+	margin-left:25px;
+}
+
+/* --------------------------------------- avis ----------------------------*/
+
+#flex3 {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+	width: 1425px;
+}
+
+.avis {
+	display:grid;
+	grid-template-rows: 1fr 1fr 2fr;
+	grid-template-columns: 1fr 3fr;
+	width:420px;
+
+
+	background-color: hsl(300, 43%, 22%); 
+	color: white;
+	border-radius: 10px;
+	}
+
+#avis1 {
+	margin-bottom: 40px;
+}
+
+#avis2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#avis3 {
+	margin-top: 40px;
+}
+
+.photo {
+	grid-row: 1 / 3;
+	grid-column: 1;
+	margin-left: 40px;
+	margin-top: 40px;
+	border-radius:100%;
+	width: 40px;
+}
+
+.nom {
+	grid-row: 1;
+	grid-column: 2;
+	display:flex;
+	align-self: flex-end;
+	margin-bottom: 0px;
+	margin-top: 40px;
+
+	font-weight: 600;
+}
+
+.buyer {
+	grid-row: 2;
+	grid-column: 2;
+	display:flex;
+	align-self: center;
+	margin-top: 0px;
+	margin-bottom: 40px;
+
+	color: hsl(333, 80%, 67%);
+	font-weight: 300;
+}
+
+.contenu {
+	grid-row: 3;
+	grid-column: 1 / 3;
+	margin-left: 40px;
+	margin-top: 0px;
+	margin-bottom: 35px;
+	margin-right: 20px;
+
+	font-weight: 300;
+	line-height: 22px;
+	width: 325px;
+}
+
+/************/
+@media only screen and (max-width: 890px) {
+	#flex1 {width: 100%; text-align: center;}
+	#flex2 {width: 100%;}
+	#flex3 {width: 100%;}
+	body {padding: 0px;}
+
+	#titre {width: auto;}
+	#sous-titre {width: auto;}
+
+	.rated {width: 100%;}
+	#rated1 {margin-left: 0px; display:flex; flex-direction: column; }
+	#rated2 {margin-left: 0px; display:flex; flex-direction: column; }
+	#rated3 {margin-left: 0px; display:flex; flex-direction: column; }
+
+	.avis {width: 100%;}
+	#avis1 {margin:0px 0px 5px 0px;}
+	#avis2 {margin:5px 0px 5px 0px;}
+	#avis3 {margin:5px 0px 0px 0px;}
+
+	.contenu{width: auto;}
+}
+
+
+
+
+/*---------------------------*/
+.attribution {
+	font-size: 11px;
+ 	text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} 
